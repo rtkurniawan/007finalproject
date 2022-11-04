@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1>Task List</h1>
+        <h1 class="jumbotron">Task List</h1>
     </header>
     <main>
         <!--form begins-->
@@ -19,9 +19,9 @@
             <!--container starts--> 
             <div class="container my-4">
                 <!--first row-->
-                <div class="row justify-content-center my-2">
+                <div class="row justify-content-center my-2 p-5">
                     <label for="task_name">Task Name :</label>
-                    <input type="text" id="task_name" name="task_name" required> <br>
+                    <input type="text" id="task_name" name="task_name" required required placeholder="Grocery Shopping"> <br>
                     </label>
                 </div>
                 <!--second row-->
@@ -29,7 +29,7 @@
                     <!--divided by 3 columns-->
                     <div class="col-4">
                         <label for="description">Description:</label> <br>
-                        <textarea id="description" name="description"></textarea>
+                        <textarea id="description" name="description" placeholder="buy eggs..."></textarea>
                     </div>
                     <div class="col-4">
                         <label for="assigned">Assigned To:</label> <br>
@@ -50,7 +50,7 @@
                 </div>
                 <!--submit input to be recorded-->
                 <div class="row justify-content-center my-4">
-                    <input type="submit" value="submit" name="Add Task">
+                    <input type="submit" value="submit" name="Add Task" class="btn btn-info">
                 </div>
                 <!--result of the input-->
                 <div class="card"style="width: 500px;">
